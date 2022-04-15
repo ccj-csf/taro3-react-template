@@ -40,7 +40,13 @@ type Response = {
 	message: string
 	status: any
 }
-
+type Options = {
+	url: string
+	data: any
+	baseUrl?: string
+	showToast?: boolean
+	header?: any
+}
 class Request {
 	async request({
 		url,
@@ -100,84 +106,48 @@ class Request {
 		}
 	}
 
-	get(payload: {
-		url: string
-		data?: any
-		baseUrl?: string
-		showToast?: boolean
-		header?: any
-	}): Promise<Response> {
+	get(options: Options): Promise<Response> {
 		return this.request({
 			method: 'GET',
-			...payload,
+			...options,
 		})
 	}
 
-	post(payload: {
-		url: string
-		data: any
-		baseUrl?: string
-		showToast?: boolean
-		header?: any
-	}): Promise<Response> {
+	post(options: Options): Promise<Response> {
 		return this.request({
 			method: 'POST',
-			...payload,
+			...options,
 		})
 	}
 
-	put(payload: {
-		url: string
-		data: any
-		baseUrl?: string
-		showToast?: boolean
-		header?: any
-	}): Promise<Response> {
+	put(options: Options): Promise<Response> {
 		return this.request({
 			method: 'PUT',
-			...payload,
+			...options,
 		})
 	}
 
-	delete(payload: {
-		url: string
-		data: any
-		baseUrl?: string
-		showToast?: boolean
-		header?: any
-	}): Promise<Response> {
+	delete(options: Options): Promise<Response> {
 		return this.request({
 			method: 'DELETE',
-			...payload,
+			...options,
 		})
 	}
 
-	jsonp(payload: {
-		url: string
-		data: any
-		baseUrl?: string
-		showToast?: boolean
-		header?: any
-	}): Promise<Response> {
+	jsonp(options: Options): Promise<Response> {
 		return this.request({
 			method: 'GET',
 			jsonp: true,
-			...payload,
+			...options,
 		})
 	}
 
 	/**
 	 * 上传文件
 	 */
-	upload(payload: {
-		url: string
-		data: any
-		baseUrl?: string
-		showToast?: boolean
-		header?: any
-	}): Promise<Response> {
+	upload(options: Options): Promise<Response> {
 		return this.request({
-			...payload,
+			...options,
 			method: 'UPLOAD',
 			header: {
 				'Content-Type': 'multipart/form-data',

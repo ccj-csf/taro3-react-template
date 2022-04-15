@@ -1,4 +1,4 @@
-import { CommonActionTypes } from '../actionTypes'
+import { CommonActionTypes } from '../action-types'
 import { Dispatch } from 'redux'
 
 export const addUser = (

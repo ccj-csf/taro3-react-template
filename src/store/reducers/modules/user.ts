@@ -1,4 +1,4 @@
-import { CommonActionTypes } from '@/store/actionTypes'
+import { CommonActionTypes } from '@/store/action-types'
 import { AnyAction } from 'redux'
 type InitialStateType = {
 	num: number

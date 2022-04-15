@@ -414,6 +414,23 @@ interface Window {
 - @ts-ignore
   - 有些时候类型错误是组件的，但是看起来非常难受。会一直编译报报错，这里就可以使用 @ts-ignore 来暂时忽略它。尽量不要这样使用
 
+### 命名规范
+
+- src下文件
+  - 文件夹命名统一采用-连接，eg:pruduct-manager
+  - config配置下文件采用.连接
+  - assets/images图片采用-连接,eg:home-bg
+  - components下文件夹名和组件采用Pascal命名
+  - hooks下采用.连接，导出方法名使用小驼峰,查看hook下示列
+  - styles下文件采用.连接
+  - constants文件采用.连接，具体文件中命名规范查看示列
+  - pages下文件后续会详细说明
+  - utils下文件采用.连接
+  - ts、tsx文件中变量和方法采用小驼峰
+  - 类首字母大写
+  - 样式文件变量定义采用小驼峰
+  - 样式命名采用-连接
+
 ### UI组件库
 
 - 项目已引入**`Taroify`**组件库
@@ -557,17 +574,17 @@ yarn commit
     运行开发模式(编译并支持修改热加载)
 
     ```bash
-    dev:mp-dev
+    yarn dev:mp-dev
     ```
 
     测试环境打包
 
     ```bash
-    build:mp-uat
+    yarn build:mp-uat
     ```
 
     生产模式打包
 
     ```bash
-     build:mp-pro
+    yarn build:mp-pro
     ```
