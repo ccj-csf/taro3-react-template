@@ -1,5 +1,9 @@
 module.exports = {
 	extends: ['taro/react', 'plugin:@typescript-eslint/recommended'],
+	globals: {
+		Component: true,
+		wx: true,
+	},
 	parser: '@typescript-eslint/parser',
 	plugins: ['@typescript-eslint'],
 	rules: {

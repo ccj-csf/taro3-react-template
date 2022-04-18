@@ -1,7 +1,6 @@
-// eslint-disable-next-line no-undef
 Component({
 	properties: {
-		// a-16-notice | a-24-bed | a-24-shower | a-24-wifi | a-32-clock | a-16-notice1 | a-24-bed1 | a-24-airConditionersvg | a-24-shower1 | a-24-wifi1 | a-32-clock1 | chuangjianren | fangda | cuiban | daochu | biaoqian | fenlei | guanzhuren | biaojiwancheng | guidang
+		// zhuanfarenwu | youxuanjingpin | zhanghaozhenduan | zhanghaoguzhi | zhanghaochaijie | ticiqi | qufenxiang | xuanpinguangchang | wodetuandui | zhangfenrenwu | jinggaotishi | gengduogongneng | tupianzhuanwenzi | shujujiankong | dengdaitishi | jingpinketang | tougaorenwu | yinliurenwu
 		name: {
 			type: String,
 		},
@@ -20,7 +19,6 @@ Component({
 			value: 18,
 			observer: function (size) {
 				this.setData({
-					// eslint-disable-next-line no-undef
 					svgSize: (size / 750) * wx.getSystemInfoSync().windowWidth,
 				})
 			},
@@ -28,7 +26,6 @@ Component({
 	},
 	data: {
 		colors: '',
-		// eslint-disable-next-line no-undef
 		svgSize: (18 / 750) * wx.getSystemInfoSync().windowWidth,
 		quot: '"',
 		isStr: true,

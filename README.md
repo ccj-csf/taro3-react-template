@@ -110,16 +110,16 @@
       render() {
         return (
           // 原色彩
-          <IconFont name="a-16-notice" />
+          <IconFont name="zhuanfarenwu" />
 
           // 单色：红色
-          <IconFont name="a-24-bed" color="red" />
+          <IconFont name="zhuanfarenwu" color="red" />
 
           // 多色：红色+橘色
-          <IconFont name="a-24-wifi" color={['red', 'orange']} size={300} />
+          <IconFont name="zhuanfarenwu" color={['red', 'orange']} size={300} />
 
           // 不同格式的颜色写法
-          <IconFont name="a-24-wifi" color={['#333', 'rgb(50, 124, 39)']} />
+          <IconFont name="zhuanfarenwu" color={['#333', 'rgb(50, 124, 39)']} />
         );
       }
     }

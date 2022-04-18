@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Button, Cell, ConfigProvider } from '@taroify/core'
+import { Button, ConfigProvider } from '@taroify/core'
 import styles from './index.module.scss'
 import { View } from '@tarojs/components'
 import { useSelector, useDispatch } from 'react-redux'
@@ -44,7 +44,7 @@ const Index: React.FC = () => {
         <View className='mt-4'>
           <Button onClick={() => jumpToDemo('router')} color='danger' block>路由跳转</Button>
           <Button color='primary' disabled className='mt-6' block>
-						主要按钮
+            主要按钮
           </Button>
           <View className={testClass}>css module</View>
           <View className='flex justify-between mt-6'>
@@ -52,13 +52,10 @@ const Index: React.FC = () => {
             <Button onClick={() => dispatch(deleteUser(1))}>删除</Button>
           </View>
           <Counter num={num} />
-          <IconFont name='a-16-notice' size={100} />
-          <Cell title='单元格'>内容</Cell>
-          <Cell title='单元格' brief='描述信息'>内容</Cell>
+          <IconFont name='zhuanfarenwu' size={100} />
           <BaseButton content='button' />
           <View className='taroify-ellipsis'>asgdhjkasghjasgdhjasghjdasghjdgasjhdgshjagdhjasgdhjasgdhjasgdhjasghjdassdgfjhasgdhjas</View>
-				  <View className='test-1'>44444</View>
-				  <View />
+          <View />
         </View>
       </ConfigProvider>
     </>
