@@ -6,7 +6,7 @@ export default function (chain: {
 	requestParams: any
 	proceed: (arg0: any) => void
 }): void {
-	console.log('delelte', chain)
+	console.log('delete', chain)
 	const requestParams = chain.requestParams
 
 	const { header } = requestParams

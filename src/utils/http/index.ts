@@ -1,10 +1,10 @@
 import Taro from '@tarojs/taro'
 import { CodeStatus } from '@/constants'
-import urlInterceptor from '@/utils/http/interceptors/url.interceptor'
-import headerInterceptor from '@/utils/http/interceptors/header.interceptor'
-import paramInterceptor from '@/utils/http/interceptors/param.interceptor'
-import dataInterceptor from '@/utils/http/interceptors/data.interceptor'
-import deleteInterceptor from '@/utils/http/interceptors/delete.interceptor'
+import urlInterceptor from '@/utils/http/interceptors/urlInterceptor'
+import headerInterceptor from '@/utils/http/interceptors/headerInterceptor'
+import paramInterceptor from '@/utils/http/interceptors/paramInterceptor'
+import dataInterceptor from '@/utils/http/interceptors/dataInterceptor'
+import deleteInterceptor from '@/utils/http/interceptors/deleteInterceptor'
 
 /**
  * @description 拦截器
