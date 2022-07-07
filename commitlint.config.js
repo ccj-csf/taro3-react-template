@@ -22,6 +22,7 @@ module.exports = {
 				'wip', //pr的提交
 				'mod', //不确定分类的修改
 				'workflow', //工作流改进
+				'types', //类型定义文件
 			],
 		],
 	},

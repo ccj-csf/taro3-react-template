@@ -15,6 +15,7 @@ const config = {
 	// 解析alias路径
 	alias: {
 		'@': path.resolve(__dirname, '..', 'src/'),
+		'#': path.resolve(__dirname, '..', 'types/'),
 	},
 	plugins,
 	defineConstants: {},

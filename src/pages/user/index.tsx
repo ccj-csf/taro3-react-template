@@ -1,8 +1,4 @@
-/**
- * 个人中心页面
- */
-
-import React from 'react'
+import * as React from 'react'
 import { View } from '@tarojs/components'
 import { useApp, useRouter } from 'taro-hooks'
 
@@ -10,7 +6,7 @@ import './index.scss'
 
 const UserIndex = (): JSX.Element => {
 	const [appInstance, globalData] = useApp(true)
-	const { } = useRouter()
+	const {} = useRouter()
 	console.log('appInstance :>> ', appInstance)
 	console.log('globalData :>> ', globalData)
 	return (

@@ -1,17 +1,17 @@
-import { Button } from "@taroify/core"
-import React from "react"
+import * as React from 'react'
+import { Button } from '@antmjs/vantui'
 
-type Iprops = {
-    content: string
+type Props = {
+	content: string
 }
 
-const BaseButton: React.FC<Iprops> = props => {
-    const { content } = props
-    return (
-        <>
-            <Button color='danger'>{content || 'base button'}</Button>
-        </>
-    )
+const BaseButton: React.FC<Props> = props => {
+	const { content } = props
+	return (
+		<>
+			<Button type='danger'>{content || 'base button'}</Button>
+		</>
+	)
 }
 
 export default BaseButton
