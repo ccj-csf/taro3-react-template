@@ -1,7 +1,6 @@
 import * as React from 'react'
-
-import 'windi.css'
 import './app.scss'
+import 'windi.css'
 import './guard'
 import { Provider } from 'react-redux'
 
