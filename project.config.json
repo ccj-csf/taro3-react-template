@@ -4,10 +4,15 @@
 	"description": "taro3-react多端项目模板",
 	"appid": "wxf8c69668fa43027f",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": false,
 		"postcss": false,
-		"minified": false
+		"minified": false,
+		"minifyWXSS": false,
+		"minifyWXML": false,
+		"ignoreUploadUnusedFiles": true,
+		"compileHotReLoad": false,
+		"bigPackageSizeSupport": true
 	},
 	"compileType": "miniprogram"
 }
